@@ -1,0 +1,190 @@
+/* Universal styles */
+
+/* Nav bar handled in nav.css */
+
+/* Banner */
+
+#banner {
+    position: relative;
+    display: flex;
+    height: 30rem;
+}
+
+#banner .img-container {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .img-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+#banner .text-container {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    color: rgb(242, 242, 242);
+}
+
+#banner .text-container h1 {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0, 0, 0, 0.5);
+}
+
+#banner .text-container span {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 0.1875rem 0.1875rem 0.1875rem rgba(0, 0, 0, 0.5);
+}
+
+/* Smartphone: Banner */
+@media only screen and (max-width: 426px) {
+
+    #banner .img-container img {
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+}
+
+/* Breif explanation */
+
+#breif-explanation {
+    display: flex;
+    background-color: rgb(49,50,55);
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(242, 242, 242);
+    justify-content: space-around;
+    padding: 5rem 0;
+}
+
+#breif-explanation .mission {
+    display: flex;
+    flex-flow: column;
+    height: 15rem;
+    width: 30%;
+    padding: 1rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+}
+
+#breif-explanation .mission h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+#breif-explanation .mission p {
+    font-size: 1.4rem;
+}
+
+#breif-explanation .rules {
+    display: flex;
+    flex-flow: column;
+    height: 15rem;
+    width: 30%;
+    padding: 1rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+}
+
+#breif-explanation .rules h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+#breif-explanation .rules ol {
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+}
+
+/* Smartphone: Breif explanation */
+@media only screen and (max-width: 426px) {
+
+    #breif-explanation {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    #breif-explanation .mission {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    #breif-explanation .rules {
+        width: 70%;
+    }
+
+}
+
+/* Inspiration */
+
+#inspiration {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(32,34,36);
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+#inspiration h1 {
+    color: rgb(242, 242, 242);
+    width: 100%;
+    height: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+#inspiration .images-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#inspiration .images-container .img-container {
+    width: 50%;
+    padding: 1rem 0;
+}
+
+#inspiration .images-container .img-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Smartphone: Inspiration */
+@media only screen and (max-width: 426px) {
+
+    #inspiration .images-container .img-container {
+        width: 80%;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(49, 50, 55);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: rgb(242, 242, 242);
+    font-size: 1.2rem;
+}
+
+
